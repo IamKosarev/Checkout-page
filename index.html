@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      maximum-scale=5"
+    />
+    <link rel="icon" href="devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Checkout page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="flex-container">
+        <div class="items">
+          <div class="item">
+            <img src="img/photo1.png" alt="backbag" class="item-img" />
+            <div class="item-right">
+              <div class="item-name">Vintage Backbag</div>
+              <div class="item-price">
+                <div class="price">$54.99</div>
+                <div class="discount">$94.99</div>
+              </div>
+              <div class="quantity">
+                <div class="minus">
+                  <span class="material-icons">remove</span>
+                </div>
+                <div class="quantity-value">1</div>
+                <div class="plus"><span class="material-icons">add</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/photo2.png" alt="shoes" class="item-img" />
+            <div class="item-right">
+              <div class="item-name">Levi Shoes</div>
+              <div class="item-price">
+                <div class="price">$74.99</div>
+                <div class="discount">$124.99</div>
+              </div>
+              <div class="quantity">
+                <div class="minus">
+                  <span class="material-icons">remove</span>
+                </div>
+                <div class="quantity-value">1</div>
+                <div class="plus"><span class="material-icons">add</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="order">
+            <div class="total">
+              <div class="value">Shipping</div>
+              <div class="value">$19</div>
+            </div>
+            <div class="total">
+              <div class="value">Total</div>
+              <div class="value">$148.98</div>
+            </div>
+          </div>
+        </div>
+
+        <form action="">
+          <h3>Contact Information</h3>
+          <div class="input-container">
+            <label for="email">E-mail</label>
+            <div class="input-box">
+              <span class="material-icons">face</span>
+              <input type="text" id="email" placeholder="Enter your email..." />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone</label>
+            <div class="input-box">
+              <input type="text" id="phone" placeholder="Enter your phone..." />
+              <span class="material-icons">face</span>
+            </div>
+          </div>
+
+          <h3>Shipping address</h3>
+          <div class="input-container">
+            <label for="name">Full Name</label>
+            <div class="input-box">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your full name..."
+                value="Rodney Cotton"
+              />
+              <span class="material-icons">face</span>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="address">Address</label>
+            <div class="input-box">
+              <input type="text" id="address" placeholder="Your address..." />
+              <span class="material-icons">face</span>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone</label>
+            <div class="input-box">
+              <input type="text" id="phone" placeholder="Enter your phone..." />
+              <span class="material-icons">face</span>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="city">City</label>
+            <div class="input-box">
+              <input type="text" id="city" placeholder="Enter your city..." />
+              <span class="material-icons">face</span>
+            </div>
+          </div>
+          <div class="last-row">
+            <div class="input-container">
+              <label for="countries">Country</label>
+              <div class="input-box">
+                <select name="countries" id="countries">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <span class="material-icons">face</span>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="postal-code">Postal code</label>
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="postal-code"
+                  placeholder="Enter your postal code..."
+                />
+                <span class="material-icons">face</span>
+              </div>
+            </div>
+          </div>
+          <input type="checkbox" />
+          <label id="checkbox-label" for="checkbox"
+            >Save this information for next time</label
+          >
+          <div class="button">Continue</div>
+        </form>
+      </div>
+
+      <footer>
+        <a href="https://github.com/IamKosarev" target="_blank"
+          >Artem Kosarev</a
+        >
+        @
+        <a href="https://devchallenges.io/" target="_blank">DevChallenges.io</a>
+      </footer>
+    </div>
+  </body>
+</html>
