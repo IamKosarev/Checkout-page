@@ -23,6 +23,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 700px)"
+      href="styles/mobile.css"
+    />
     <title>Checkout page</title>
   </head>
   <body>
@@ -76,20 +81,30 @@
           </div>
         </div>
 
-        <form action="">
+        <form action="" onsubmit="alert('Form Submitted!')">
           <h3>Contact Information</h3>
           <div class="input-container">
             <label for="email">E-mail</label>
             <div class="input-box">
               <span class="material-icons">local_post_office</span>
-              <input type="text" id="email" placeholder="Enter your email..." />
+              <input
+                required
+                type="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
             </div>
           </div>
           <div class="input-container">
             <label for="phone">Phone</label>
             <div class="input-box">
               <span class="material-icons">call</span>
-              <input type="text" id="phone" placeholder="Enter your phone..." />
+              <input
+                required
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone..."
+              />
             </div>
           </div>
 
@@ -99,6 +114,7 @@
             <div class="input-box">
               <span class="material-icons">account_circle</span>
               <input
+                required
                 type="text"
                 id="name"
                 placeholder="Your full name..."
@@ -110,14 +126,24 @@
             <label for="address">Address</label>
             <div class="input-box">
               <span class="material-icons">home</span>
-              <input type="text" id="address" placeholder="Your address..." />
+              <input
+                required
+                type="text"
+                id="address"
+                placeholder="Your address..."
+              />
             </div>
           </div>
           <div class="input-container">
             <label for="city">City</label>
             <div class="input-box">
               <span class="material-icons">location_city</span>
-              <input type="text" id="city" placeholder="Your city..." />
+              <input
+                required
+                type="text"
+                id="city"
+                placeholder="Your city..."
+              />
             </div>
           </div>
           <div class="last-row">
@@ -125,7 +151,7 @@
               <label for="countries">Country</label>
               <div class="input-box">
                 <span class="material-icons">public</span>
-                <select name="countries" id="countries">
+                <select required name="countries" id="countries">
                   <option selected>Your country...</option>
                   <option value="USA">USA</option>
                   <option value="Russia">Russia</option>
@@ -139,10 +165,11 @@
               <div class="input-box">
                 <span class="material-icons">markunread_mailbox</span>
                 <input
+                  required
                   id="postal-code"
                   type="text"
                   id="postal-code"
-                  placeholder="Your postal code..."
+                  placeholder="Postal code..."
                 />
               </div>
             </div>
@@ -150,10 +177,10 @@
           <div class="checkbox-container">
             <input type="checkbox" />
             <label id="checkbox-label" for="checkbox"
-            >Save this information for next time</label
+              >Save this information for next time</label
             >
           </div>
-          <div class="button">Continue</div>
+          <input type="submit" class="button" value="Continue" />
         </form>
       </div>
 

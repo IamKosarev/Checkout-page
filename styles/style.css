@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 1010px;
   margin: 0 auto;
-  padding: 64px 10px 0px;
+  padding: 64px 12px 0px;
 }
 
 .flex-container {
@@ -35,6 +35,7 @@ h1 {
   background: #f2f2f2;
   border-radius: 12px;
   padding: 33px;
+  margin-left: 50px;
 }
 
 .item {
@@ -51,7 +52,6 @@ h1 {
 
 .item-name {
   width: 163px;
-  font-size: 16px;
   line-height: 20px;
   color: #4e5150;
   margin-bottom: 10px;
@@ -245,15 +245,18 @@ input[type="checkbox"]:checked::before {
 }
 
 .button {
+  display: block;
+  border: none;
   margin-left: auto;
   text-align: center;
-  padding: 17px;
   border-radius: 12px;
   width: 156px;
   height: 54px;
   color: #fff;
-  background: #F2994A;
+  background: #f2994a;
   cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 16px;
 }
 
 .button:hover {
